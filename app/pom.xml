@@ -45,8 +45,8 @@
         </dependency>
 
         <dependency>
-        <groupId>be.rubus.quarkus</groupId>
-    <artifactId>greeting-extension</artifactId>
+            <groupId>be.rubus.quarkus</groupId>
+            <artifactId>greeting-extension</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
 

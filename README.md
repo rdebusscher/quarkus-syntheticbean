@@ -4,7 +4,11 @@ How to use Synthetic Bean in Quarkus?
 
 StackOverflow question https://stackoverflow.com/questions/73293293/when-creating-syntheticbean-using-beancreator-i-get-npe-when-bean-is-instantiat
 
-Excuted Steps
+Solution:
+
+The Scope was Singleton from Google Juice and not the CDI one.  Problem is not reported correctly due to insufficient checks within `io.quarkus.arc.processor.BeanConfiguratorBase#scope(java.lang.Class<? extends java.lang.annotation.Annotation>)`
+
+Executed Steps
 
 - using maven archetype created an extension, see directory `extension`.
 - Use a Synthetic bean (as I can't use producer, see final goal)
